@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Forms em HTML</h1>
+    <hr />
+    <form action="https://httpbin.org/anything" method="get" autocomplete="off">
+      <article>
+        <label for="name">Name:</label><br />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          size="50"
+          maxlength="50"
+          placeholder="Insert Name"
+          autofocus
+        />
+        <span>'mandatory filling'</span>
+      </article>
+      <article>
+        <label for="surname">Surname:</label><br />
+        <input
+          type="text"
+          id="surname"
+          name="surname"
+          size="50"
+          maxlength="50"
+          placeholder="Insert Surname"
+          disabled
+        />
+      </article>
+      <article>
+        <label for="comments">Comment</label><br />
+        <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+      </article>
+      <article>
+        <h1>What music style do you prefer?</h1>
+        <input type="radio" id="rock" name="music" value="rock" checked />
+        <label for="rock">Rock</label>
+
+        <input type="radio" id="pop" name="music" value="pop" />
+        <label for="pop">Pop</label>
+
+        <input type="radio" id="triphop" name="music" value="triphop" />
+        <label for="triphop">Triphop</label>
+      </article>
+      <article>
+        <h1>Where do you stream to Music?</h1>
+        <input type="checkbox" id="spotify" name="stream" value="spotify" />
+        <label for="spotify">Spotify</label>
+
+        <input type="checkbox" id="youtube" name="stream" value="youtube" />
+        <label for="youtube">Youtube</label>
+
+        <input type="checkbox" id="soundcloud" name="stream" value="soundcloud" />
+        <label for="soundcloud">Soundcloud</label>
+
+        <input type="checkbox" id="apple" name="stream" value="apple" />
+        <label for="apple">Apple Music</label>
+      </article>
+      <article>
+        <h1>What device do you listen Music on?</h1>
+        <label for="device">Device:</label>
+        <select name="device" id="device" selected="none">
+          <option value="none">...</option>
+          <option value="smartphone">Smartphone</option>
+          <option value="computer">Computer</option>
+          <option value="walkman">Walkman</option>
+          <option value="radio">Radio</option>
+        </select>
+      </article>
+      <article>
+        <h1>What device do you listen Music on? - 2</h1>
+        <label for="device">Device:</label><br />
+        <p>Can choose multiple with Ctrl</p>
+        <select name="device-2" id="device" multiple>
+          <option value="smartphone">Smartphone</option>
+          <option value="computer">Computer</option>
+          <option value="walkman">Walkman</option>
+          <option value="radio">Radio</option>
+        </select>
+      </article>
+      <article>
+        <h1>Which browser do you use?</h1>
+        <label for="browser">Browser:</label>
+        <input type="text" id="browser" name="browser" list="browsers" />
+        <datalist id="browsers">
+          <option value="Chrome">Chrome</option>
+          <option value="Firefox">Firefox</option>
+          <option value="Safari">Safari</option>
+          <option value="Edge">Edge</option>
+          <option value="Opera">Opera</option>
+        </datalist>
+      </article>
+      <article>
+        <h1>Text Input Options</h1>
+        <input type="color" id="color" name="color" /> <br />
+        <input type="date" id="date" name="date" /> <br />
+        <input type="time" id="time" name="time" /> <br />
+        <input type="password" id="password" name="password" /> <br />
+        <input type="number" id="number" name="number" /> <br />
+        <input type="email" id="email" name="email" /> <br />
+        <input type="url" id="url" name="url" /> <br />
+        <input type="search" id="search" name="search" /> <br />
+        <input type="range" id="range" name="range" /> <br />
+      </article>
+
+      <p>
+        <input type="reset" value="Reset" />
+        <input type="submit" />
+        <button>SUBMIT</button>
+      </p>
+    </form>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
